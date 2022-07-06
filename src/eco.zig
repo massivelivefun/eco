@@ -15,7 +15,7 @@ const Context = struct {
     rbp: u64,
 };
 
-const State = enum(u2) = {
+const State = enum(u2) {
     unused,
     running,
     ready,
