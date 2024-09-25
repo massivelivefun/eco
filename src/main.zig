@@ -1,17 +1,17 @@
 const std = @import("std");
-const eco = @import("eco");
+const eco = @import("./eco");
 const io = std.io;
 
-fn f() {
+fn f() void {
     const S = struct {
         var x: isize = 0;
-    }
+    };
     var i = 0;
     var id = 0;
     const stdout = io.getStdOut().writer();
 
-    x += 1;
-    id = x;
+    S.x += 1;
+    id = S.x;
     while (i < 10) {
         try stdout.print("{d} {d}\n", .{id, i});
         _ = eco.eco_yield();
