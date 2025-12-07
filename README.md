@@ -1,4 +1,4 @@
-# eco-threads
+# eco
 
 A zig implementation of green threads.
 
