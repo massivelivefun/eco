@@ -2,6 +2,10 @@
 
 A zig implementation of green threads.
 
+Supports x86-64.
+
+Eco's minimum tested zig version is v0.15.2.
+
 ## Goals
 
 - Make this library work well standard library components and asynchronous features.
